@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bitacora 1 </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bebas+Neue&family=Oranienbaum&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Bitacora</h1>
+        <h2 id="JS">Java Script</h2>
+    </header>
+    <nav class="main-nav">
+        <a href="#JS"> Javascript </a>
+        <a href="#JSR"> Referenciar con JS </a>
+        <a href="#sty"> Propiedad Style </a>
+        <a href="#DOM"> DOM </a>
+        <a href="#Cl"> Classlist </a>
+        <a href="#Event"> Eventos</a>
+        <a href="#If"> If else </a>
+        <a href="#View"> Viewport </a>
+        <a href="#med"> @ medias</a>
+    </nav>
+    <section class="main-sec">
+        <div class="columna1">
+            <br>
+            <h2> Ideas Clave </h2>
+            <br>
+            <div class="texto">
+                <p>
+                    1.Sintaxis Similar a C: JavaScript tiene una sintaxis similar a C y adopta nombres y convenciones de Java.
+                    <br>
+                    2.Uso Principal: Se utiliza principalmente del lado del cliente (client-side) en navegadores web para mejorar la interfaz de usuario y crear páginas web dinámicas.
+                    <br>
+                    3.Versión del Servidor: También existe una versión del lado del servidor llamada Server-side JavaScript (SSJS).
+                    <br>
+                    4.Compatibilidad con ECMAScript: Desde 2012, todos los navegadores modernos soportan ECMAScript 5.1, mientras que los navegadores más antiguos soportan al menos ECMAScript 3.
+                    <br>
+                    5.Orientado a Objetos: Es un lenguaje de programación orientado a objetos y un dialecto estándar ECMAScript.
+                    <br>
+                    6.Historia: Fue desarrollado por Brendan Eich de Netscape, inicialmente llamado Mocha, luego LiveScript, y finalmente JavaScript.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columna2">
+            <h2> Notas </h2>
+            <div class="texto">
+                <br>
+                <p>
+                    JavaScript se diseno con una sintaxis similar a C. aunque adopta nombres
+                    y convenciones del lenguaje de programacion Java.
+                    Se utiliza principalmente en su forma del lado del cliente (client-side),
+                    implementado como parte de un navegador web permitiendo mejoras en la interfaz
+                    de usuario y paginas web dinamicas, aunque existe una forma de JavaScript del
+                    lado del servidor (Server-side JavaScript o SSJS).
+                    <br>
+                    Desde el 2012, todos los navegadores modernos soportan completamente ECMAScript 5.1,
+                    una version de Javascript. Los navegadores mas antiguos soportan por lo menos 
+                    ECMAScript 3.
+                    Es un lenguaje de programacion orientado a objetos, dialecto estandar ECMAScript,
+                    Fue desarrollado originalmente por Eich de Netscape con el nombre de Mocha,
+                    posteriormente se le nombro LiveScript, y finalmente JavaScript.
+                </p>
+                <br>
+                <div class="foto">
+                    <img src="imagenes/java.png" width="30%" alt="JS">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="back">
+            <a href="#JS">
+                Volver al inicio
+            </a>
+        </div>
+        <br>
+    </section>
+    <br>
+    <footer class="pie">
+        <h2> Resumen </h2>
+        <div class="texto">
+            <p>
+                JavaScript, diseñado con una sintaxis similar a C y adoptando convenciones del lenguaje Java, 
+                se usa principalmente del lado del cliente en navegadores web para mejorar la interfaz de usuario 
+                y crear páginas web dinámicas. Además, existe una versión para el lado del servidor conocida como 
+                Server-side JavaScript (SSJS). Desde 2012, todos los navegadores modernos son compatibles con ECMAScript 5.1, 
+                mientras que los navegadores más antiguos al menos soportan ECMAScript 3. JavaScript es un lenguaje de 
+                programación orientado a objetos y se basa en el estándar ECMAScript. Fue creado por Brendan Eich de Netscape, 
+                inicialmente llamado Mocha, luego LiveScript, y finalmente recibió su nombre actual, JavaScript.
+            </p>
+        </div>
+    </footer>
+    <br>
+    <header>
+        <h1>Bitacora</h1>
+        <h2 id="JSR">Referenciar con JS</h2>
+    </header>
+    <nav class="main-nav">
+        <a href="#JS"> Javascript </a>
+        <a href="#JSR"> Referenciar con JS </a>
+        <a href="#sty"> Propiedad Style </a>
+        <a href="#DOM"> DOM </a>
+        <a href="#Cl"> Classlist </a>
+        <a href="#Event"> Eventos</a>
+        <a href="#If"> If else </a>
+        <a href="#View"> Viewport </a>
+        <a href="#med"> @ medias</a>
+    </nav>
+    <section class="main-sec">
+        <div class="columna1">
+            <br>
+            <h2> Ideas Clave </h2>
+            <br>
+            <div class="texto">
+                <p>
+                    1.Métodos para incluir JavaScript en HTML: <br>
+                        - Directamente en el archivo. <br>
+                        - Utilizar la etiqueta script /script. <br>
+                        - Se puede colocar en: <br>
+                            - head: Puede mejorar la separación del contenido HTML, pero puede afectar la velocidad de carga. <br>
+                            - body: Mejora la velocidad de carga del contenido del sitio web, ya que el JavaScript se procesa después de que el contenido HTML se ha cargado. <br>
+                            <br>
+                            - En un archivo separado: <br>
+                            - Referenciar el archivo JavaScript de manera similar a como se hace con los archivos CSS. <br>
+                            Beneficios: <br>
+                            - Mejora la sostenibilidad y reutilización del código. <br>
+                            - Facilita la legibilidad y el mantenimiento del código. <br>
+                            - Permite que el archivo JavaScript sea cacheado, lo que puede mejorar el rendimiento del sitio web.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columna2">
+            <h2> Notas </h2>
+            <div class="texto">
+                <br>
+                <p>
+                    Hay dos formas de incluir JavaScript en HTML y hacer que funcionen juntos. <br>
+                    -Agregar JavaScript directamente a un archivo HTML. <br>
+                    -Agregar codigo JavaScript en un archivo separado. <br>
+                    <br>
+                    Agregar JavaScript directamente a un archivo HTML:
+                    Para insertar JS de forma directa en HTML se utiliza la etiqueta script /script,
+                    el codigo JS debe quedar dentro de esta etiqueta.
+                    El codigo JS se puede colar dentro de: <br>
+                    -La etiqueta head <br>
+                    -La etiqueta body <br>
+                    <br>
+                    Dependiendo de donde se agregue el codigo JS en el archivo HTML, la carga sera
+                    diferente. Por lo general se recomienda agregarlo en el head para que permanezca
+                    separado del contenido HTML.
+                    <br>
+                    Pero colocarlo dentro de body puede a mejorar la velocidad de carga, 
+                    ya que el contenido del sitio web se cargara mas rapido, y solo despues 
+                    de eso se procesara el JavaScript.
+                    <br>
+                    Agregar codigo JavaScript a un archivo separado:
+                    Instertar JS en HTML directamente no siempre es la mejor opcion. Sobre todo
+                    si algunos scripts deben utilizarse en varias paginas, por lo tanto, es mejor
+                    mantenerlo codigo JS en archivos separados y hacer referencia a estos archivos
+                    de la misma forma en que se hace referencia a los documentos CSS.
+                    <br>
+                    Algunos de los beneficios de agregar codigo JS en archivos separados son: <br>
+                    -Cuando los codigos HTML y JavaScript estan separados, se cumple el principio
+                    de diseno de separacion y hace que todo sea mucho mas sostenible y reutilizable. <br>
+                    -La legibilidad y el mantenimiento del codigo es mucho mas facil. <br>
+                    -Los archivos JavaScript en cache mejoran el rendimiento general del sitio web al
+                    disminuir el tiempo que tardan las paginas en cargarte.
+                </p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="back">
+            <a href="#JSR">
+                Volver al inicio
+            </a>
+        </div>
+        <br>
+    </section>
+    <br>
+    <footer class="pie">
+        <h2> Resumen </h2>
+        <div class="texto">
+            <p>
+                Hay dos formas principales de incluir JavaScript en HTML:
+                <br>
+                1.Incluir JavaScript directamente en el archivo HTML: <br>
+                    - Se utiliza la etiqueta script /script. <br>
+                    - Puede colocarse en: <br>
+                    - head: Esto permite que el JavaScript esté separado del contenido HTML, aunque puede retrasar la carga del 
+                    contenido visible ya que el navegador procesa el JavaScript antes de renderizar el HTML. <br>
+                    - body: Colocar el JavaScript al final del body puede mejorar la velocidad de carga del contenido del sitio web, 
+                    ya que el contenido HTML se carga primero y el JavaScript se ejecuta después. 
+                <br>
+                2.Utilizar un archivo JavaScript separado: <br>
+                    - Es posible incluir el JavaScript a través de un archivo externo, referenciado en el HTML como se hace con los archivos CSS. <br>
+                    - Ventajas de esta técnica: <br>
+                        - Separación del código, Legibilidad y mantenimiento, Mejora del rendimiento
+            </p>
+        </div>
+    </footer>
+    <br>
+    <header>
+        <h1>Bitacora</h1>
+        <h2 id="sty">Propiedad Style</h2>
+    </header>
+    <nav class="main-nav">
+        <a href="#JS"> Javascript </a>
+        <a href="#JSR"> Referenciar con JS </a>
+        <a href="#sty"> Propiedad Style </a>
+        <a href="#DOM"> DOM </a>
+        <a href="#Cl"> Classlist </a>
+        <a href="#Event"> Eventos</a>
+        <a href="#If"> If else </a>
+        <a href="#View"> Viewport </a>
+        <a href="#med"> @ medias</a>
+    </nav>
+    <section class="main-sec">
+        <div class="columna1">
+            <br>
+            <h2> Ideas Clave </h2>
+            <br>
+            <div class="texto">
+                <p>
+                    1.Manipulación de Estilos en JavaScript: <br>
+                        - Se utiliza la propiedad style para modificar el estilo de un elemento HTML o crear uno nuevo. <br>
+                        - Sintaxis para cambiar el estilo: document.getElementById("id").style.propiedad = "valor o nuevo valor"; .
+                    <br>
+                    2.Propiedades de Flexbox: <br>
+                        - alignContent, alignItems, alignSelf, flex, flexBasis, flexDirection, flexFlow, flexGrow, flexShrink, flexWrap, justifyContent, order.
+                    <br>
+                    3.Propiedades de Animación: <br>
+                        - animation, animationDelay, animationDirection, animationDuration, animationFillMode, animationIterationCount, animationName, animationTimingFunction, animationPlayState.
+                    <br>
+                    4.Propiedades para el Background: <br>
+                        - background, backgroundAttachment, backgroundColor, backgroundImage, backgroundPosition, backgroundRepeat, backgroundClip, backgroundOrigin, backgroundSize.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columna2">
+            <h2> Notas </h2>
+            <div class="texto">
+                <br>
+                <p>
+                    En JavaScript podemos utilizar la propiedad style para manipular el estilo de un elemento HTML
+                    o crear uno de nuevo. <br>
+                    Para cambiar el estilo de un elemento HTML se debe usar la siguiente sintaxis.
+                    document.getElementByid("id").style.propiedad = "valor o nuevo valor"; <br>
+                    Lista de propiedades de JS para modificar el CSS: <br>
+                    Ejemplos de Propiedades de flexbox:
+                    alignContent, alignitems, alignSelf, flex, flexBasis, flexDirection,
+                    flexFlow, flexGlow, flexShrink,FlexWrap, justifyContent y order.
+                    <br>
+                    Ejemplos de Propiedades de animacion:
+                    animation, animationDelay, animationDirection, animationDuration, 
+                    animationFillMode, animationIteractionCount, animationName, animationTimingFunction
+                    y animationPlayState.
+                    <br>
+                    Ejemplos de Propiedades para el background:
+                    background, backgroundAttachment, backgroundColor, background-color, backgroundImage, backgroundPosition, backgroundRepeat, 
+                    backgroundClip, backgroundOrigin y backgroundSize,
+                </p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="back">
+            <a href="#sty">
+                Volver al inicio
+            </a>
+        </div>
+        <br>
+    </section>
+    <br>
+    <footer class="pie">
+        <h2> Resumen </h2>
+        <div class="texto">
+            <p>
+                En JavaScript, se puede modificar el estilo de un elemento HTML usando la propiedad `style`, con la sintaxis `document.getElementById("id").style.propiedad = "valor";`. Algunas propiedades importantes para ajustar estilos incluyen:
+                <br>
+                -Flexbox: alignContent, alignItems, flex, flexDirection, entre otras. <br>
+                -Animaciones: animation, animationDuration, animationTimingFunction, etc. <br>
+                -Background: background, backgroundColor, backgroundImage, y más. <br>
+                <br>
+                Estas propiedades permiten ajustar y crear estilos dinámicamente para los elementos HTML.
+            </p>
+        </div>
+    </footer>
+    <br>
+    <header>
+        <h1>Bitacora</h1>
+        <h2 id="DOM">Document object model</h2>
+    </header>
+    <nav class="main-nav">
+        <a href="#JS"> Javascript </a>
+        <a href="#JSR"> Referenciar con JS </a>
+        <a href="#sty"> Propiedad Style </a>
+        <a href="#DOM"> DOM </a>
+        <a href="#Cl"> Classlist </a>
+        <a href="#Event"> Eventos</a>
+        <a href="#If"> If else </a>
+        <a href="#View"> Viewport </a>
+        <a href="#med"> @ medias</a>
+    </nav>
+    <section class="main-sec">
+        <div class="columna1">
+            <br>
+            <h2> Ideas Clave </h2>
+            <br>
+            <div class="texto">
+                <p>
+                    1.DOM del W3C: Es una interfaz de lenguaje neutral que permite acceder y actualizar dinámicamente el contenido, la estructura y el estilo de un documento.
+                    <br>
+                    2.Definición y administración: Está definido y administrado por el W3C (World Wide Web Consortium), y los navegadores aplican estas especificaciones para soportarlo.
+                    <br>
+                    3.Creación al cargar: Cuando se carga una página web, el navegador crea un Modelo de Objeto de Documento (DOM) de esa página.
+                    <br>
+                    4.Funciones del DOM: Permite a los programadores construir documentos, navegar por su estructura, y añadir, modificar o eliminar elementos y contenido.
+                    <br>
+                    5.Acceso a elementos HTML**: El HTML DOM define los elementos HTML como objetos, sus propiedades, métodos para acceder a ellos y eventos asociados.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columna2">
+            <h2> Notas </h2>
+            <div class="texto">
+                <br>
+                <p>
+                    El Modelo de objeto de documento (DOM) del W3C es una plataforma y una interfaz de lenguaje 
+                    neutral que permite que los programas y los scripts accedan y actualicen dinamicas el contenido,
+                    la estructura y el estilo de un documento.
+                    El DOM esta definido y administrado por el W3C, por lo que los distintos navegadores simplemente
+                    aplican las especificaciones del World Wide Web Consortium, para dar soporte al DOM  en sus
+                    aplicaciones.
+                    <br>
+                    Cuanda se carga una pagina web, el navegador crea un Modelo de objeto de documento de la pagina.
+                    Con el DOM, los programadores pueden construir documentos, navegar por su estructura y anadir
+                    modificar, o eliminar elementos y contenido.
+                    Se puede acceder a casi cualquier elemento que se encuentre en un documento HTML.
+                    <br>
+                    El HTML DOM es un modelo de objetos estandar y una interfaz de programacion para HTML que define:
+                    -Los elementos HTML como objetos. <br>
+                    -Las propiedades de todos los elementos HTML. <br>
+                    -Los metodos para acceder a todos los elementos HTML. <br>
+                    -Los eventos para todos los elementos HTML.
+                </p>
+                <br>
+                <div class="foto">
+                    <img src="imagenes/DOM.png" width="15%" alt="DOM">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="back">
+            <a href="#DOM">
+                Volver al inicio
+            </a>
+        </div>
+        <br>
+    </section>
+    <br>
+    <footer class="pie">
+        <h2> Resumen </h2>
+        <div class="texto">
+            <p>
+                El Modelo de Objeto de Documento (DOM) del W3C es una interfaz estandarizada que facilita el acceso y la 
+                manipulación dinámica de los contenidos, la estructura y el estilo de un documento web. Definido y administrado 
+                por el World Wide Web Consortium (W3C), el DOM permite que diferentes navegadores implementen sus especificaciones 
+                para ofrecer soporte uniforme en sus aplicaciones.
+                <br>
+                Cuando se carga una página web, el navegador genera un DOM que representa el documento en una estructura de objetos. 
+                Esto permite a los programadores interactuar con la página de manera programática, construyendo, navegando y modificando 
+                su contenido y estructura según sea necesario. Además, el DOM proporciona métodos para añadir, modificar o eliminar elementos y contenido en la página.
+                <br>
+                En particular, el HTML DOM es una interfaz de programación estandarizada para HTML que define los elementos HTML como 
+                objetos, especifica sus propiedades, y proporciona métodos y eventos para acceder y manipular estos elementos. 
+                Esto asegura que los desarrolladores puedan trabajar con los elementos HTML de manera consistente a través de diferentes navegadores.
+            </p>
+        </div>
+    </footer>
+    <br>
+    <header>
+        <h1>Bitacora</h1>
+        <h2 id="Cl">Classlist</h2>
+    </header>
+    <nav class="main-nav">
+        <a href="#JS"> Javascript </a>
+        <a href="#JSR"> Referenciar con JS </a>
+        <a href="#sty"> Propiedad Style </a>
+        <a href="#DOM"> DOM </a>
+        <a href="#Cl"> Classlist </a>
+        <a href="#Event"> Eventos</a>
+        <a href="#If"> If else </a>
+        <a href="#View"> Viewport </a>
+        <a href="#med"> @ medias</a>
+    </nav>
+    <section class="main-sec">
+        <div class="columna1">
+            <br>
+            <h2> Ideas Clave </h2>
+            <br>
+            <div class="texto">
+                <p>
+                    1.Propósito de classList: <br>
+                        - Devuelve los nombres de clase de un elemento. <br>
+                        - Útil para agregar, eliminar y alternar clases CSS.
+                    <br>
+                    2.Métodos de classList: <br>
+                        - add(): Agrega una o más clases al elemento. Si la clase ya existe, no se agrega nuevamente. <br>
+                        - remove(): Elimina una o más clases del elemento. No arroja error si la clase no existe. <br>
+                        - toggle(): Alterna una clase en el elemento. Si la clase no existe, la agrega; si ya existe, la elimina. También puede recibir un parámetro booleano para forzar la adición o eliminación de la clase.
+                    <br>
+                    3.Compatibilidad: <br>
+                        - classList no es soportada en Internet Explorer 9 y versiones anteriores.
+
+
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columna2">
+            <h2> Notas </h2>
+            <div class="texto">
+                <br>
+                <p>
+                    La propiedad classList devuelve los nombres de clase de un elemento.
+                    Esta propiedad es util para agregar, eliminar y alternar clases CSS en un elemento.
+                    La propiedad classList es de solo lectura, sin embargo, puede modificarla utilizando 
+                    los metodos add(), remove() y toggle().
+                    La propiedad classList no es soportada en IE9 y versiones anteriores. 
+                    <br>
+                    Propiedades de las classlist: <br>
+                    classList.add(): 
+                    La propiedad classList mas elmetodo add agrega uno o mas nombres de clase a un elemento. 
+                    Si la clase especificada ya existe, la clase no se agregara.
+                    <br>
+                    classList.remove(): 
+                    La propiedad classList mas elmetodo remove elimina una o mas nombres de clase de un elemento.
+                    Eliminar una clase que no existe, NO arroja un error.
+                    <br>
+                    classList.toggle(): 
+                    La propiedad classList mas el metodo toggle alterna entre un nombre de clase para un elemento.
+                    El primer parametro elimina la clase especificada de un elemento y devuelve falso.
+                    Si la clase no existe, se agrega el elemento y el valor de retorno es verdadero. El segundo
+                    parametro opcional es un valor booleano que obliga a agregar o quitar la clase, independientemente
+                    de si ya existia o no. Por ejemplo:
+                </p>
+                <br>
+                <div class="foto">
+                    <img src="imagenes/jsclasslist.jpg" width="20%" alt="Cl">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="back">
+            <a href="#Cl">
+                Volver al inicio
+            </a>
+        </div>
+        <br>
+    </section>
+    <br>
+    <footer class="pie">
+        <h2> Resumen </h2>
+        <div class="texto">
+            <p>
+                La propiedad `classList` de un elemento permite manipular sus clases CSS de manera sencilla. <br>
+                Puedes agregar, eliminar o alternar clases usando los métodos add(), remove(), y toggle(). <br>
+                classList no es compatible con Internet Explorer 9 y versiones anteriores.
+            </p>
+        </div>
+    </footer>
+    <br>
+    <header>
+        <h1>Bitacora</h1>
+        <h2 id="Event">Eventos</h2>
+    </header>
+    <nav class="main-nav">
+        <a href="#JS"> Javascript </a>
+        <a href="#JSR"> Referenciar con JS </a>
+        <a href="#sty"> Propiedad Style </a>
+        <a href="#DOM"> DOM </a>
+        <a href="#Cl"> Classlist </a>
+        <a href="#Event"> Eventos</a>
+        <a href="#If"> If else </a>
+        <a href="#View"> Viewport </a>
+        <a href="#med"> @ medias</a>
+    </nav>
+    <section class="main-sec">
+        <div class="columna1">
+            <br>
+            <h2> Ideas Clave </h2>
+            <br>
+            <div class="texto">
+                <p>
+                    1.Eventos HTML: Son acciones que pueden ser provocadas por el navegador o por el usuario.
+                    <br>
+                    2.Reacción con JavaScript: JavaScript puede responder a estos eventos para realizar acciones específicas.
+                    <br>
+                    3.Eventos HTML comunes: <br>
+                    - onchange: Se activa cuando un elemento HTML ha sido modificado. <br>
+                    - onclick: Se activa cuando el usuario hace clic en un elemento HTML. <br>
+                    - onmouseover: Se activa cuando el usuario mueve el ratón sobre un elemento HTML. <br>
+                    - onkeydown: Se activa cuando el usuario presiona una tecla del teclado. <br>
+                    - onload: Se activa cuando el navegador ha terminado de cargar la página. <br>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columna2">
+            <h2> Notas </h2>
+            <div class="texto">
+                <br>
+                <p>
+                    Un evento HTML puede ser algo que hace el navegador, o algo que hace un usuario.
+                    JavaScript puede "reaccionar" en estos eventos. 
+                    Algunos eventos HTML comunes son: <br>
+                    -onchange: Un elemento HTML ha sido cambiado. <br>
+                    -onclick: El usuario hace clic en un elemento HTML. <br>
+                    -onmouseover: El usuario baja el mouse d eun elemneto HTML. <br>
+                    -inkeydown: El usuario presiona una tecla del teclado. <br>
+                    -onload: El navegador ha terminado de cargar la pagina. <br>
+                </p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="back">
+            <a href="#Event">
+                Volver al inicio
+            </a>
+        </div>
+        <br>
+    </section>
+    <br>
+    <footer class="pie">
+        <h2> Resumen </h2>
+        <div class="texto">
+            <p>
+                En HTML, los eventos son acciones o sucesos que pueden ser generados por el navegador 
+                o por la interacción del usuario con los elementos de la página. Estos eventos permiten 
+                a los desarrolladores web hacer que sus páginas respondan a ciertas acciones o cambios. 
+                JavaScript, un lenguaje de programación ampliamente usado en desarrollo web, tiene la capacidad 
+                de reaccionar a estos eventos mediante la implementación de funciones específicas llamadas 
+                "manejadores de eventos".
+            </p>
+        </div>
+    </footer>
+    <br>
+    <header>
+        <h1>Bitacora</h1>
+        <h2 id="If">If else</h2>
+    </header>
+    <nav class="main-nav">
+        <a href="#JS"> Javascript </a>
+        <a href="#JSR"> Referenciar con JS </a>
+        <a href="#sty"> Propiedad Style </a>
+        <a href="#DOM"> DOM </a>
+        <a href="#Cl"> Classlist </a>
+        <a href="#Event"> Eventos</a>
+        <a href="#If"> If else </a>
+        <a href="#View"> Viewport </a>
+        <a href="#med"> @ medias</a>
+    </nav>
+    <section class="main-sec">
+        <div class="columna1">
+            <br>
+            <h2> Ideas Clave </h2>
+            <br>
+            <div class="texto">
+                <p>
+                    -Estructura de control: <br>
+                    - if: Ejecuta un bloque de código si la condición es verdadera. <br>
+                    - else: Ejecuta un bloque de código si la condición en el if es falsa.
+                    <br>
+                    -Operadores de comparación: <br>
+                    - ==: Compara igualdad. <br>
+                    - ===: Compara igualdad estricta (también considera el tipo de dato). <br>
+                    - !=: Compara diferencia. <br>
+                    - !==: Compara diferencia estricta (también considera el tipo de dato). <br>
+                    - >: Mayor que. <br>
+                    - <: Menor que. <br>
+                    - >=: Mayor o igual que. <br>
+                    - <=: Menor o igual que. <br>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columna2">
+            <h2> Notas </h2>
+            <div class="texto">
+                <br>
+                <p>
+                    Use if para especificar un bloque de codigo para ejecutar, si una condicion especificada es verdadera
+                    Use else para especificar un bloque de codigo para se ejecutado, si la misma condicion es falsa.
+                    <br>
+                    Operadores: <br>
+                    == igualdad <br>
+                    === igualdad estricta <br>
+                    != Diferente <br>
+                    !== Diferente estricto <br>
+                    > Mayor que <br>
+                    < Menor que <br>
+                    >= Mayor o igual que <br>
+                    <= Menor o igual que 
+                </p>
+                <br>
+                <div class="foto">
+                    <img src="imagenes/if.png" width="20%" alt="If else">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="back">
+            <a href="#If">
+                Volver al inicio
+            </a>
+        </div>
+        <br>
+    </section>
+    <br>
+    <footer class="pie">
+        <h2> Resumen </h2>
+        <div class="texto">
+            <p>
+                -Estructura de control: <br>
+                    -if: Utiliza el if para ejecutar un bloque de código solo si una condición especificada es verdadera. Es útil para tomar decisiones en el flujo del programa.
+                    -else: Usa el `else` para ejecutar un bloque de código alternativo cuando la condición del if es falsa. Esto asegura que siempre se ejecute una opción u otra.
+                <br>
+                - **Operadores de comparación**: <br>
+                    -==: Compara si dos valores son iguales en términos de valor, sin tener en cuenta el tipo de dato.
+                    -===: Compara si dos valores son iguales en valor y tipo de dato, realizando una comparación estricta.
+                    -!=: Compara si dos valores son diferentes, sin tener en cuenta el tipo de dato.
+                    -!==: Compara si dos valores son diferentes en valor o en tipo de dato, realizando una comparación estricta.
+                    ->: Determina si un valor es mayor que otro.
+                    -<: Determina si un valor es menor que otro.
+                    ->=: Determina si un valor es mayor o igual que otro.
+                    -<=: Determina si un valor es menor o igual que otro.
+                <br>
+                Estos conceptos y operadores te permiten controlar el flujo del programa y realizar comparaciones entre valores de manera efectiva.
+            </p>
+        </div>
+    </footer>
+    <br>
+    <header>
+        <h1>Bitacora</h1>
+        <h2 id="View">Viewport</h2>
+    </header>
+    <nav class="main-nav">
+        <a href="#JS"> Javascript </a>
+        <a href="#JSR"> Referenciar con JS </a>
+        <a href="#sty"> Propiedad Style </a>
+        <a href="#DOM"> DOM </a>
+        <a href="#Cl"> Classlist </a>
+        <a href="#Event"> Eventos</a>
+        <a href="#If"> If else </a>
+        <a href="#View"> Viewport </a>
+        <a href="#med"> @ medias</a>
+    </nav>
+    <section class="main-sec">
+        <div class="columna1">
+            <br>
+            <h2> Ideas Clave </h2>
+            <br>
+            <div class="texto">
+                <p>
+                    1.Viewport o ventana gráfica: Es el área visible de una página web para el usuario, que varía según el dispositivo (más pequeña en smartphones que en computadoras).
+                    <br>
+                    2.Diseño previo a dispositivos móviles: Las páginas web solían ser diseñadas para pantallas de computadora con un tamaño fijo y estático.
+                    <br>
+                    3.Problemas con dispositivos móviles: Con la llegada de tabletas y teléfonos móviles, las páginas web fijas no se ajustaban bien a las pantallas más pequeñas.
+                    <br>
+                    4.Ajustes en navegadores móviles: Los navegadores en dispositivos móviles redujeron la página web completa para que se ajustara a la pantalla.
+                    <br>
+                    5.Experiencia de usuario: Los usuarios están acostumbrados a desplazarse verticalmente, no horizontalmente. Desplazarse horizontalmente o hacer zoom para ver toda la página resulta en una experiencia de usuario deficiente.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columna2">
+            <h2> Notas </h2>
+            <div class="texto">
+                <br>
+                <p>
+                    El Viewport o ventana grafica es el area visible del usuariode una pagina web. Varia segun
+                    el dispositivo y sera mas pequeña en un smartphone que en la computadora.
+                    Antes de las tabletas y los telefonos moviles, las paginas web se diseñaban solo para pantallas
+                    de computadora, y era comun que las paginas web tuvieran un diseño estatico y un tamaño fijo.
+                    Luego, cuando comenzamos a navegar por internet utilizando tabletas y telefonos moviles, las 
+                    paginas web de tamaño fijo eran demasaido grandes paa ajustar a la ventana gráfica.
+                    Para solucionar esto, los navegadores en esos dispositivos redujeron la pagina web completa
+                    para ajustarse a la pantalla.
+                    <br>
+                    Los usuarios estan acostumbrados a desplazar sitios web verticalmente tanto en dispositivos de escritorio 
+                    como moviles, pero no horizontalmente.
+                    Por lo tanto, si el usuario se ve obligado a desplazarse horizontalmente o alejarse, para ver toda 
+                    la pagina web, se obtiene una experencia de usuario pobre.
+                </p>
+                <br>
+                <div class="foto">
+                    <img src="imagenes/viewports.png" width="22%" alt="Viewport">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="back">
+            <a href="#View">
+                Volver al inicio
+            </a>
+        </div>
+        <br>
+    </section>
+    <br>
+    <footer class="pie">
+        <h2> Resumen </h2>
+        <div class="texto">
+            <p>
+                Claro, aquí tienes un resumen más conciso:
+                <br>
+                El viewport o ventana gráfica es el área visible de una página web que varía según el dispositivo: 
+                es más pequeña en smartphones que en computadoras. Antes de los dispositivos móviles, las páginas web 
+                estaban diseñadas para pantallas de computadora con un tamaño fijo. Con la llegada de tabletas y teléfonos móviles, 
+                estas páginas de tamaño fijo no se ajustaban bien a las pantallas pequeñas, por lo que los navegadores reducían la página completa para adaptarla.
+                <br>
+                Esto llevó a un problema: los usuarios prefieren desplazar las páginas web verticalmente, no horizontalmente. 
+                Si una página requiere desplazamiento horizontal o hacer zoom para ver todo el contenido, la experiencia del 
+                usuario se ve afectada negativamente. Por lo tanto, es importante que las páginas web se diseñen para adaptarse 
+                automáticamente al tamaño del viewport del dispositivo.
+            </p>
+        </div>
+    </footer>
+    <br>
+    <header>
+        <h1>Bitacora</h1>
+        <h2 id="med">@ medias</h2>
+    </header>
+    <nav class="main-nav">
+        <a href="#JS"> Javascript </a>
+        <a href="#JSR"> Referenciar con JS </a>
+        <a href="#sty"> Propiedad Style </a>
+        <a href="#DOM"> DOM </a>
+        <a href="#Cl"> Classlist </a>
+        <a href="#Event"> Eventos</a>
+        <a href="#If"> If else </a>
+        <a href="#View"> Viewport </a>
+        <a href="#med"> @ medias</a>
+    </nav>
+    <section class="main-sec">
+        <div class="columna1">
+            <br>
+            <h2> Ideas Clave </h2>
+            <br>
+            <div class="texto">
+                <p>
+                    1.Media Queries en CSS3: Permiten adaptar la presentación del contenido según las características del dispositivo.
+                    <br>
+                    2.Estándar W3C: Se convirtió en estándar recomendado en junio de 2012 y es fundamental para el diseño web adaptativo.
+                    <br>
+                    3.Soporte del Navegador: Los navegadores tienen diferentes versiones que especifican el soporte para la regla `@media`.
+                    <br>
+                    4.Tipos de @media CSS: <br>
+                        -all: Para todos los tipos de medios. <br>
+                        -print: Para impresoras. <br>
+                        -screen: Para pantallas de ordenadores, tabletas, teléfonos inteligentes, etc. <br>
+                        -speech: Para lectores de pantalla que leen la página en voz alta.
+                    <br>
+                    5.Ejemplos de @media queries: <br>
+                        -Computadora de escritorio: Estilo normal. <br>
+                        -Laptop y tablet horizontal: `@media screen and (max-width: 1024px)` <br>
+                        -Tablet vertical y smartphone horizontal**: `@media screen and (max-width: 720px)` <br>
+                        -Smartphone vertical**: `@media screen and (max-width: 480px)`
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columna2">
+            <h2> Notas </h2>
+            <div class="texto">
+                <br>
+                <p>
+                    Las media queries son un modulo de CSS3 que adapta la representacion del contenido a las caracterirsticas 
+                    de un dispositivo.
+                    Se conviertio en un estandar recomendado por la W3C en junio de 2012 y es un principio basico del diseño
+                    web adaptativo.
+                    <br>
+                    Soporte del navegador:
+                    Los numeros en la tabla especifican la primera version del navegador que es totalmente compatible con la
+                    regla @media.
+                    <br>
+                    Tipos de @media CSS:
+                    all Se utiliza para todos losdispositivos de tipo medios, 
+                    print Utilizado para impresoras,
+                    screen Se utiliza para pantallas de ordenadores, tabletas, telefonos inteligentes, etc,
+                    spreech Se utiliza para lectores de pantalla que "lee" la pagina en voz alta.
+                    <br>
+                    @media queries:
+                    Computadora de escritorio: Estilo normal
+                    Laptop y tablet horizontal: @media screen and (max-width:1024px) <br>
+                    Tablet vertical y smartphone horizontal: @media screen and (max-width:720px) <br>
+                    smartphone vertical: @media screen and (max-width:480px)
+                </p>
+                <br>
+                <div class="foto">
+                    <img src="imagenes/Media-Queries.png" width="20%" alt="@medias">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="back">
+            <a href="#med">
+                Volver al inicio
+            </a>
+        </div>
+        <br>
+    </section>
+    <br>
+    <footer class="pie">
+        <h2> Resumen </h2>
+        <div class="texto">
+            <p>
+                Las media queries son una característica de CSS3 que permite adaptar la presentación del 
+                contenido según las características del dispositivo. Se convirtieron en un estándar recomendado 
+                por la W3C en junio de 2012 y son esenciales para el diseño web adaptativo. 
+                <br>
+                Los tipos de media queries 
+                incluyen `all` para todos los medios, `print` para impresoras, `screen` para pantallas y `speech` para 
+                lectores de pantalla. Ejemplos de uso incluyen estilos específicos para computadoras de escritorio, 
+                laptops, tabletas y smartphones según su tamaño de pantalla.
+            </p>
+        </div>
+    </footer>
+    <br>
+</body>
+</html>
